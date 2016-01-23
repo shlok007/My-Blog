@@ -1,0 +1,17 @@
+a:link
+{
+   text-decoration: none;
+}
+li
+{
+	text-decoration: none ;
+}
+body
+{
+	text-align: center;
+}
+#me-img
+{
+	padding-top: 20px;
+	padding-bottom: -10px;
+}

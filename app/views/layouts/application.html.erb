@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>Shlok Srivastava</title>
+  <%= stylesheet_link_tag 'materialize', media: 'screen projection' %>
+  <%= stylesheet_link_tag 'materialize.min.css', media: 'screen projection' %>  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+          
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<nav class="green">
+<div class="nav-wrapper">
+<ul>
+<li><%= link_to "Home",home_path %></li>
+<li><%= link_to "About Me",about_me_path %></li>
+<li class="right black"><%= link_to "Contact Me!",contact_me_path %></li>
+</ul>
+</div>
+</nav>
 </head>
 <body>
-
+  <div class="container-fluid">
+     <!--<div class="row">
+        <div class="col s1">1st</div>
+        <div class="col s1">1st</div>
+        <div class="col s1">1st</div>
+        <div class="col s1">1st</div>
+        <div class="col s1">1st</div>
+        <div class="col s1">1st</div>
+        <div class="col s1">1st</div>
+        <div class="col s1">1st</div>
+        <div class="col s1">1st</div>
+        <div class="col s1">1st</div>
+        <div class="col s1">1st</div>
+        <div class="col s1">1st</div>
+        </div>-->
+      </div>
 <%= yield %>
-
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  
 </body>
 </html>
