@@ -1,0 +1,1 @@
+->form_for calls create method of that controller

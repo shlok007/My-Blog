@@ -1,0 +1,7 @@
+<%= form_for Comment.new do |f|%>
+<%=f.text_field :name, :placeholder => 'Name'%>
+<%=f.text_field :email, :placeholder => "Email"%>
+<%=f.text_field :content, :placeholder => "Content"%>
+<%=f.hidden_field :post_id,:value => params[:id]%>
+<%=f.submit "COMMENT", class: "btn waves-effect waves-light",align: "left"%>
+<%end%>

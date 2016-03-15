@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get 'pages/about_me', :as => :about_me
   resources :posts
+  resources :comments
   get 'pages/contact_me', :as => :contact_me
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
